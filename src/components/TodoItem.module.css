@@ -1,0 +1,57 @@
+.todoItem {
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  display: flex;
+  height: 3.5rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 0.75rem;
+  justify-content: space-between;
+}
+
+/* Hide the browser's default checkbox */
+.todoItem input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.todoItem img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.todoItem img:hover{
+  background-color: var(--lightblue);
+  transition: 200ms ease;
+}
+
+.todoItem button {
+  border: none;
+  background: none;
+  color: var(--gray-300);
+  cursor: pointer;
+}
+
+.todoItem button:hover{
+  color: var(--gray-200);
+  transition: 200ms ease;
+}
+
+.itemDesc {
+  line-height: 3.5rem;
+  vertical-align: top;
+  padding: 0 0.75rem 0 0.75rem;
+  width: 100%;
+  text-align: left;
+}
+
+.checkedItemDesc {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
